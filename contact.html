@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Starcrossed Ski Resort</title>
+        <meta name="author" content="Rae Barrera">
+        <meta name="description" content="Contact page for Starcrossed Ski Resort.">
+        
+        <!-- favicon -->
+        <link rel="icon" href="images/favicon.png">
+
+        <!-- stylesheet -->
+        <link rel="stylesheet" href="styles.css">
+
+        <!-- fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Spectral&family=Spectral+SC&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <h1>Starcrossed Ski Resort</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Accommodations</a></li>
+                    <!-- make a contact.html -->
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <!-- double check this image, use css to incorporate it as a background -->
+            <!-- image four, hero image-->
+        </header> 
+        <main id="contact-main">
+            <div id="contact">
+                <h2> Contact Us</h2>
+                <p> Please reach out to us with any questions or concerns. We are happy to help you plan your dream vacation with us!
+                    Required fields marked with a *</p>
+                    <!-- image five -->
+                <img src="images/swiss-sunset.jpg" alt="a beautiful evening, mountains in the distance with a beautiful pink and orange sunset sky" class="center">
+            </div>
+<!-- double check the span class / required fields, kinda wack -->
+            <div id="contact-form">
+                <form method="POST" action="https://wp.zybooks.com/form-viewer.php">
+                    <section id="firstform">
+                        <label for="fullname">Full Name<span class="required">*</span></label>
+                        <input type="text" id="fullname" placeholder="Full Name" required><br>
+
+                        <label for="email"> Email<span class="required">*</span></label>
+                        <input type="email" id="email" placeholder="Email" required><br>
+
+                        <!-- COME BACK, something is up with the phone number... annoying asf -->
+                        <label for="phonenumber"> Phone Number<span class="required">*</span></label>
+                        <input type="tel" placeholder="Phone Number" required><br>
+                    </section>
+                    <section id="radioform">
+                    <!-- this is the radioed option section -->
+					<div class="radio-section">
+                        <input type="radio" id="radiophone" name="choose1" value="Phone">
+                        <label class="text-label" for="radiophone">Phone</label>
+
+                        <input type="radio" id="radioemail" name="choose1" value="Email">
+                        <label class="text-label" for="radioemail">Email</label>
+					</div>
+                    <!-- end radio section -->
+                    <label class="text-label for="comments"> Comments</label>
+                    <input type="text" id="comments" placeholder="Comments">
+                    <input type="submit" name="thesubmit" id="thesubmit">
+                    </section>
+                </form>
+            </div>
+        </main>
+        <footer id="foot">
+            <p>Copyright &copy;2023 - Starcrossed Ski Resort</p>
+            <p>This site is for educational purposes only. </p>
+        </footer>
+    </body>
+</html>
